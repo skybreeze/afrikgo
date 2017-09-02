@@ -1,0 +1,112 @@
+/*
+	* Afrikgo 2017
+*/
+
+body{
+	overflow-x: hidden;
+	font-family: 'Rubik', sans-serif;/*
+	background-image: url('../img/pattern.jpg');
+	background-repeat:repeat-x;
+	top: 15%;*/
+}
+h2{
+	font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color:rgb(39,136,230);
+	line-height: 1.2;
+}
+h4,
+.list-profile h4{
+	color:rgb(39,136,230);
+	font-weight:normal;
+	/*line-height: 2.3;*/
+}
+
+.body-content{
+	background-image: url('../img/pattern.jpg');
+	background-repeat: repeat-x;
+	background-position: 0 35px;
+
+}
+.detail p{
+	font-size: 16px;
+	/*color: rgb(102,113,124);*/
+	font-weight: 500;
+}
+.detail h4{
+	font-size: 25px;
+}
+.detail p:last-child{
+	font-size: 15px;
+	font-weight: normal;
+	/*color: rgb(39,136,230);*/
+}
+.detail-btn{
+	margin-top: 50px;
+}
+.list{
+
+}
+.list h2{
+	font-family: 'Rubik', sans-serif;
+	color:rgb(39,136,230);
+	line-height: 80%;
+	font-size: 40px;
+}
+.verticalLine {
+  border-right: 1px solid rgb(229,229,229);
+  height: 87px;
+}
+.container #header{
+	width: 90%;
+	margin-left: 5%;
+}
+.container #content{
+	width: 90%;
+	margin-left: 5%;
+}
+.heading{
+	margin-top: 112px;
+	
+}
+.heading h4{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 35px;
+	margin-top: 25px;
+}
+.heading ul li{
+	font-size: 16px;
+	color: rgb(118,118,118);
+/*	line-height: 2.188;*/
+	margin-bottom: 8px;
+}
+.list-profile{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#messages,
+#messages img{
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+#border-bottom{
+	border: 1px solid #ebebeb;
+	width:97%;
+}
+.bottom-detail{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.footer{
+	margin-top: 50px;
+	background-image: url(../img/pattern-footer.png);
+	height: 75px;
+	font-family: 'Rubik', sans-serif;
+	color:rgb(118,118,118);
+	line-height: 2.188;
+	font-size: 16px;
+
+}
