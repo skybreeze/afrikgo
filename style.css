@@ -24,8 +24,8 @@ a:hover {
     font-family: 'Rubik Light';
       src: url('fonts/rubiklight.eot'); /* IE9 Compat Modes */
       src: url('fonts/rubiklight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('fonts/rubiklight.woff2') format('woff2'), /* Super Modern Browsers */
            url('fonts/rubiklight.woff') format('woff'), /* Super Modern Browsers */
-           url('fonts/rubiklight.woff') format('woff'), /* Pretty Modern Browsers */
            url('fonts/rubiklight.ttf')  format('truetype'), /* Safari, Android, iOS */
            url('fonts/rubiklight.svg#svgFontName') format('svg'); /* Legacy iOS */
   	font-weight: normal;
@@ -35,8 +35,8 @@ a:hover {
 	font-family: 'Rubik Medium';
       src: url('fonts/rubikmedium.eot'); /* IE9 Compat Modes */
       src: url('fonts/rubikmedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('fonts/rubikmedium.woff2') format('woff2'), /* Super Modern Browsers */
            url('fonts/rubikmedium.woff') format('woff'), /* Super Modern Browsers */
-           url('fonts/rubikmedium.woff') format('woff'), /* Pretty Modern Browsers */
            url('fonts/rubikmedium.ttf')  format('truetype'), /* Safari, Android, iOS */
            url('fonts/rubikmedium.svg#svgFontName') format('svg'); /* Legacy iOS */
   	font-weight: normal;
@@ -46,8 +46,8 @@ a:hover {
   	font-family: 'Rubik Regular';
       src: url('fonts/rubikregular.eot'); /* IE9 Compat Modes */
       src: url('fonts/rubikregular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('fonts/rubikregular.woff2') format('woff2'), /* Super Modern Browsers */
            url('fonts/rubikregular.woff') format('woff'), /* Super Modern Browsers */
-           url('fonts/rubikregular.woff') format('woff'), /* Pretty Modern Browsers */
            url('fonts/rubikregular.ttf')  format('truetype'), /* Safari, Android, iOS */
            url('fonts/rubikregular.svg#svgFontName') format('svg'); /* Legacy iOS */
   	font-weight: normal;
@@ -364,7 +364,7 @@ a:hover {
 	padding: 24px 37px;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	line-height: initial;
 	background: #2788e6;
 	color: #fff;
@@ -384,7 +384,7 @@ a:hover {
 	border-radius: 50%;
 	padding: 10px;
 	padding-top: 10px;
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	color: #b2c1cf;
 	font-size: 14px;
 	margin: 10px 14px;
@@ -491,7 +491,7 @@ a:hover {
 	text-align: center;
 }
 .section-title {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 42px;
 	color: #2788e6;
 }
@@ -505,14 +505,14 @@ a:hover {
 	vertical-align: middle;
 }
 .benefit .benefit-desc {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 27px;
 	color: #767676;
 	letter-spacing: .25px;
 }
 .benefit .benefit-title {
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #9daebf;
 	margin-bottom: 15px;
@@ -533,7 +533,7 @@ a:hover {
 	}
 }
 .route .route-desc {
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #9daebf;
 	margin-bottom: 90px;
@@ -561,13 +561,13 @@ a:hover {
 	margin: 0;
 }
 .route-item .price p:nth-child(1) {
-	font-family: "Rubik Light" ,sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #767676;
 	margin-bottom: 5px;
 }
 .route-item .price p:nth-child(2) {
-	font-family: "Rubik Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 25px;
 	color: #2788e6;
 }
@@ -578,7 +578,7 @@ a:hover {
 .route-item .dest li {
 	list-style: none;
 	padding-left: 20px;
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #2a2a2a;
 	position: relative;
@@ -617,7 +617,7 @@ a:hover {
 }
 .popular-btn a {
 	padding: 20px 30px;
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 14px;
 	color: #fff;
 	text-transform: uppercase;
@@ -671,7 +671,7 @@ a:hover {
 	margin-right: 25px;
 }
 .user-title {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 32px;
 	margin-bottom: 0;
 }
@@ -684,7 +684,7 @@ a:hover {
 	color: #eab244;
 }
 .user-text {
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #9cadbe;
@@ -744,7 +744,7 @@ a:hover {
 		padding-left: 20px;
 	}
 	.user-title {
-		font-family: "Rubik Light", sans-serif;
+		font-family: "Rubik Light", Fallback, sans-serif;
 		font-size: 24px;
 		margin-bottom: 0;
 	}
@@ -781,7 +781,7 @@ a:hover {
 	vertical-align: inherit;
 }
 .main-logo h1 {
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	line-height: 13.7px;
 	font-size: 31.68px;
 	color: #1478d8;
@@ -797,7 +797,7 @@ a:hover {
 .signin-area .signin-title,
 .contact-area .signin-title {
 	color: #4e565e;
-	font-family: "Rubik Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 17px;
 	margin-bottom: 0;
 }
@@ -815,7 +815,7 @@ a:hover {
   box-sizing: initial !important;
 }
 .field {
-	font-family: "Rubik Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 15px;
 	color: #666;
 	padding: 16px 22px;
@@ -891,7 +891,7 @@ a:hover {
 	color: #8498ab;
 	text-align: left;
 	margin-bottom: 22px;
-	font-family: "Rubik Regular", sans-serif;
+	font-family: "Rubik Regular", Fallback, sans-serif;
 	font-size: 15px;
 }
 .signup-area form [type="radio"]:checked,
@@ -955,7 +955,7 @@ a:hover {
 
 .signup-btn, 
 .signin-btn {
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	background: #2788e6;
 	font-size: 14px;
 	letter-spacing: .5px;
@@ -978,7 +978,7 @@ a:hover {
 	margin-bottom: 19px;
 }
 .signup-agreement {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #767676;
 	line-height: 27px;
@@ -992,7 +992,7 @@ a:hover {
 	margin: 34px 0;
 }
 .have-account {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	color: #767676;
 	font-size: 16px;
 	margin-bottom: 90px;
@@ -1008,7 +1008,7 @@ a:hover {
 .styled-checkbox + label {
 	float: left;
   	position: relative;
-  	font-family: "Rubik Light",sans-serif;
+  	font-family: "Rubik Light", Fallback, sans-serif;
   	font-size: 16px;
   	font-weight: 300;
   	color: #767676;
@@ -1055,7 +1055,7 @@ a:hover {
 
 .forgot {
 	float: right;
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 15px;
 	color: #2788e6;
 
@@ -1075,7 +1075,7 @@ a:hover {
 	clear: both;
 }
 .dont-have-account {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	color: #767676;
 	font-weight: 300;
 	font-size: 16px;
@@ -1089,7 +1089,7 @@ a:hover {
 
 /*CONTACT*/
 .pagetitle {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 42px;
 	font-weight: 300;
 	color: #2788e6;
@@ -1097,7 +1097,7 @@ a:hover {
 	text-align: center;
 }
 .subpage-title {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #2a2a2a;
 	margin-top: 0;
@@ -1130,7 +1130,7 @@ a:hover {
 }
 .hero-about .hero-text {
 	position: relative;
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 45px;
 	color: #2788e6;
 	font-weight: 300;
@@ -1149,14 +1149,14 @@ a:hover {
 }
 .our-vision .section-title,
 .about-who .section-title {
-	font-family: "Rubik Light", sans-serif; 
+	font-family: "Rubik Light", Fallback, sans-serif; 
 	font-size: 42px;
 	color: #2788e6;
 	margin-bottom: 30px;
 	margin-top: 0;
 }
 .about-desc {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 27px;
 	margin-top: 0;
@@ -1461,7 +1461,7 @@ a:hover {
 	}
 }
 .faq-sidebar li {
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	color: #909194;
 	font-size: 16px;
 	letter-spacing: .25px;
@@ -1507,7 +1507,7 @@ a:hover {
 	padding: 0;
 	font-size: 16px;
 	background: #fff;
-	font-family: "Rubik Medium", sans-serif; 
+	font-family: "Rubik Medium", Fallback, sans-serif; 
 }
 .panel-heading a {
 	text-decoration: none;
@@ -1524,7 +1524,7 @@ a:hover {
 }
 .faq-panel-group .panel-body {
 	color: #818181;
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 32px;
 }
@@ -1564,14 +1564,6 @@ a:hover {
 	}
 }
 
-
-
-
-
-
-
-
-
 .footer {
 	padding: 60px 0; 
   	padding-bottom: 40px;
@@ -1582,7 +1574,7 @@ a:hover {
 .footer h4 {
 	margin: 0;
 	margin-bottom: 33px;
-	font-family: "Rubik Medium", sans-serif;
+	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
 	color: #2788e6;
 	text-transform: uppercase;
@@ -1598,7 +1590,7 @@ a:hover {
 	list-style: none;
 }
 .footer-nav li a {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	color: #767676;
 	padding: 2px 0;
@@ -1646,40 +1638,11 @@ a:hover {
 }
 
 .copyright {
-  font-family: "Rubik Light", sans-serif;
+  font-family: "Rubik Light", Fallback, sans-serif;
   font-size: 16px;
   color: #767676;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Privacy, Cookie, Term*/
 .main-static {
@@ -1712,7 +1675,7 @@ a:hover {
   font-smoothing: antialiased !important;
 }
 .main-static h1 {
-  font-family: "Rubik Light", helvetica, sans-serif;
+  font-family: "Rubik Light", Fallback, helvetica, sans-serif;
   text-align: center;
   font-size: 42px;
   color: #2788e6;
@@ -1725,7 +1688,7 @@ a:hover {
   margin-bottom: 26px;
 }
 .main-static p.static-title-text, .main-static p.head-title {
-  font-family: "Rubik Medium", helvetica, sans-serif;
+  font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 18px;
   color: #909194;
 }
@@ -1738,7 +1701,7 @@ a:hover {
 }
 .main-static p.desc {
   font-size: 16px;
-  font-family: "Rubik Light", helvetica, sans-serif;
+  font-family: "Rubik Light", Fallback, sans-serif;
   line-height: 28px;
   color: #9d9d9d;
 }
@@ -1775,7 +1738,7 @@ a:hover {
 .main-static .text-button button.static-button{
   border-radius: 5px;
   text-align: center;
-  font-family: 'Rubik Medium', helvetica, sans-serif;
+  font-family: 'Rubik Medium', Fallback, sans-serif;
   background-color: #2788e6;
   margin: 0;
   color: white;
@@ -1968,7 +1931,7 @@ a:hover {
 
 /*HOW IT WORKS*/
 .how-it-works {
-	font-family: "Rubik Light", sans-serif;
+	font-family: "Rubik Light", Fallback, sans-serif;
 }
 .how-it-works .container,
 .how-it-works .row,
@@ -2020,7 +1983,7 @@ a:hover {
 .how-it-works .header .bg .btn {
   border-radius: 5px;
   text-align: center;
-  font-family: "Rubik Medium", helvetica, sans-serif;
+  font-family: "Rubik Medium", Fallback, sans-serif;
   background-color: #2788e6;
   margin: 0;
   color: white;
@@ -2088,7 +2051,7 @@ a:hover {
   color: #2788e6;
 }
 .how-it-works section.category-service .choose-category small {
-  font-family: "Rubik Medium";
+  font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 14px;
   display: block;
   margin: 0;
@@ -2114,7 +2077,7 @@ a:hover {
   background-color: #2788e6;
   height: 80px;
   color: white;
-  font-family: "Rubik Medium";
+  font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 16px;
   padding-left: 65px;
   text-transform: uppercase;
@@ -2323,24 +2286,6 @@ a:hover {
 		height: 700px
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .homepage-hero h1 {
