@@ -21,6 +21,16 @@ h4,
 	font-weight:normal;
 	/*line-height: 2.3;*/
 }
+.detail a,
+.detail a:hover,
+.detail a:focus,
+.list-profile a,
+.list-profile a:hover,
+.list-profile a:focus{
+	text-decoration: none;
+	color:rgb(39,136,230);
+	line-height: 1.929;
+}
 
 .body-content{
 	background-image: url('../img/pattern.jpg');
@@ -78,7 +88,7 @@ h4,
 .heading ul li{
 	font-size: 16px;
 	color: rgb(118,118,118);
-/*	line-height: 2.188;*/
+	line-height: 2.188;
 	margin-bottom: 8px;
 }
 .list-profile{
@@ -95,12 +105,27 @@ h4,
 	border: 1px solid #ebebeb;
 	width:97%;
 }
-.bottom-detail{
+.bottom-detail,
+.bottom-detail a{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
+	color:rgb(118,118,118);
 }
-.footer{
+.bottom-detail a:hover,
+.bottom-detail a:focus,
+.footer a:hover,
+.footer a:focus{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color:#337ab7;
+}
+
+.footer,
+.footer a{
 	margin-top: 50px;
 	background-image: url(../img/pattern-footer.png);
 	height: 75px;
@@ -108,5 +133,7 @@ h4,
 	color:rgb(118,118,118);
 	line-height: 2.188;
 	font-size: 16px;
+	text-decoration: none;
 
 }
+
