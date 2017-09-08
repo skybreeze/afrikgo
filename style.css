@@ -153,6 +153,9 @@ a:hover {
 }
 .main-navbar .navbar-nav > li > a.active {
   color: #2788e6;
+  -webkit-text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
+  -moz-text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
+  text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
 }
 
 @media (max-width: 885px){
