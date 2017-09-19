@@ -7,7 +7,11 @@ body {
 }
 
 body {
+<<<<<<< HEAD
 	background: #fefefe;
+=======
+/*	background: #fefefe;*/
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -153,6 +157,9 @@ a:hover {
 }
 .main-navbar .navbar-nav > li > a.active {
   color: #2788e6;
+  -webkit-text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
+  -moz-text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
+  text-shadow: 0px 0px 30px rgba(39, 136, 230, 0.48);
 }
 
 @media (max-width: 885px){
@@ -1522,6 +1529,10 @@ a:hover {
 	font-size: 16px;
 	background: #fff;
 	font-family: "Rubik Medium", Fallback, sans-serif;
+<<<<<<< HEAD
+=======
+    border-bottom: 1px solid #ddd;
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 }
 .panel-heading a {
 	text-decoration: none;
@@ -1719,6 +1730,9 @@ a:hover {
   font-family: "Rubik Light", Fallback, sans-serif;
   line-height: 28px;
   color: #9d9d9d;
+}
+.main-static p.desc .text-underline{
+  text-decoration: underline;
 }
 .main-static p.loose {
   line-height: 48px;
@@ -2138,6 +2152,8 @@ a:hover {
 .how-it-works section.featured-service .featured-product figure img {
   border-radius: 10px;
   width: 100%;
+  box-shadow: 0px 0px 21.6px 5.4px rgba(242, 242, 245, 0.45);
+  padding: 20px;
 }
 .how-it-works section.featured-service .featured-product:nth-child(2) figure {
   order: -1;
@@ -2229,6 +2245,7 @@ a:hover {
   }
   .how-it-works section.featured-service .container .featured-product figure {
     margin-bottom: 20px;
+    max-width: 100%;
     }
   .how-it-works section.category-service .choose-category small {
     font-size: 12px;
@@ -2382,18 +2399,44 @@ a:hover {
 }
 @media screen and (max-width: 680px) {
   .homepage-hero .header{
+<<<<<<< HEAD
 		height: 700px
+=======
+		height: auto;
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 	}
   .homepage-hero .header .bg {
     justify-content: flex-start;
     text-align: center;
     background-position: 40% 100%;
     background-size: 150% auto;
+<<<<<<< HEAD
+=======
+    height: 760px;
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
   }
   .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
     margin: 0 auto;
   }
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 489px) {
+  .homepage-hero .header{
+    height: auto;
+  }
+  .homepage-hero .header .bg {
+    height: 600px;
+    background-position: bottom center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homepage-hero .header .bg {
+    height: 500px;
+    background-position: bottom center;
+  }
+}
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 @media screen and (max-width: 800px) {
 	.aboutus-hero .header {
 		height: 650px;

@@ -7,7 +7,11 @@
     <meta content="empty" name="description">
     <meta content="empty" name="author">
 
+<<<<<<< HEAD
     <title>Find A Ride | Afrikgo</title>
+=======
+    <title>Home | Afrikgo</title>
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -110,6 +114,7 @@
                             <img src="images/post-box.png" width="63" height="74" alt="AfrikGo Ride Alert">
                             <p class="pa-title">Don't miss out on new rides!</p>
                             <a href="#" class="btn btn-afg btn-blue" data-toggle="modal" data-target="#myModal">Create Ride Alert</a>
+<<<<<<< HEAD
                         </div>
                     </div>
                     
@@ -175,6 +180,78 @@
                         </div>
                     </div>
                     
+=======
+                            
+                            <div class="modal fade create-alert" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-header">
+                                            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Create a Ride Alert</h4>
+                                        </div>
+                                        
+                                        <div class="modal-body">
+                                            <form class="form-horizontal af-form">
+                                                <div class="form-group alert-filter">
+                                                    <div class="col-xs-6">
+                                                        <div class="route-item">
+                                                            <div class="dest">
+                                                                <ul>
+                                                                    <li><span></span>Accra</li>
+                                                                    <li><span></span>Kumasi</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="input-filter">
+                                                            <p><span class="af-icon ico-clock"></span> Pickup Time <span class="filter-value">(2h - 7h)</span></p>
+                                                            <input id="modalfilter" type="text" class="span2" value="" data-slider-min="1" data-slider-max="7" data-slider-step="1" data-slider-value="[2,6]"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group alert-field">
+                                                    <div class="col-xs-6">
+                                                        <div class="group-input">                                                            
+                                                            <input type="text" name="" class="field" placeholder="Select date">
+                                                            <span><img src="images/Icon-Date.png"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="group-input">
+                                                            <input type="email" name="" class="field" placeholder="Your email">
+                                                            <span class="glyphicon glyphicon-envelope"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-xs-12">
+                                                        <div class="check-content">
+                                                            <input type="checkbox" name="terms" id="btncom" value="1">
+                                                            <label for="btncom">
+                                                                <span></span>
+                                                            </label>
+                                                            <span class="text-bold">Get weekly updates</span>
+                                                            <p>If you often make this journey, create an alert to see new rides every week.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group submit-alert">
+                                                    <div class="col-xs-12">
+                                                        <input type="submit" name="createalert" id="createalert" value="Create" class="btn btn-afg btn-blue">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
                 </div>
                 <div class="col-sm-7 col-md-8 col-lg-9 ride-list">
                     
@@ -475,8 +552,17 @@
   <script type="text/javascript" src="js/bootstrap-slider.js"></script>
   <script type="text/javascript">
       $("#productps").slider({});
+<<<<<<< HEAD
       $("#productprice").slider({});
       $("#modalslider").slider({});
+=======
+  </script>
+  <script type="text/javascript">
+      $("#productprice").slider({});
+  </script>
+  <script type="text/javascript">
+      $("#modalfilter").slider({});
+>>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
   </script>
 </body>
 </html>
