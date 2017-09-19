@@ -156,6 +156,13 @@
     vertical-align: middle;
     text-align: center;
 }
+.wizard > .actions > ul > li{
+    width: 100%;
+    max-width: 250px;
+}
+.wizard > .actions > ul > li:first-child{
+    display: none;
+}
 
 .wizard.vertical > .steps > ul > li
 {
@@ -205,8 +212,8 @@
 .wizard > .steps .done a:hover,
 .wizard > .steps .done a:active
 {
-    background: #9dc8e2;
-    color: #fff;
+    background: #fff;
+    color: #2788e6;
 }
 
 .wizard > .steps .error a,
@@ -224,7 +231,7 @@
     margin: 0.5em auto;
     height: 100%;
     min-height: 35em;
-/*    overflow: hidden;*/
+    overflow: hidden;
     position: relative;
     width: 100%;
     
@@ -252,7 +259,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 55px;
+    padding: 55px 0 130px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -311,7 +318,7 @@
 {
     position: relative;
     display: block;
-    text-align: right;
+    text-align: center;
     width: 100%;
 }
 
@@ -326,7 +333,8 @@
 .wizard > .actions > ul
 {
     display: inline-block;
-    text-align: right;
+    text-align: center;
+    width: 100%;
 }
 
 .wizard > .actions > ul > li
@@ -343,11 +351,19 @@
 .wizard > .actions a:hover,
 .wizard > .actions a:active
 {
+    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
     background: #2184be;
     color: #fff;
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -469,4 +485,41 @@
 .tabcontrol > .content > .body ul > li
 {
     display: list-item;
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 767px){
+    .wizard > .steps > ul > li{
+        display: block;
+        max-width: none;
+        margin-left: auto;
+    }
+    .wizard > .actions a{
+        margin-bottom: 10px;
+    }
+    .wizard > .actions > ul > li{
+        max-width: 150px;
+    }
+    .wizard > .steps::before{
+        display: none;
+    }
+}
+@media screen and (max-width: 489px){
+    .wizard > .steps > ul > li{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 379px){
+    .wizard > .content > .body{
+        padding-bottom: 90px;
+    }
+    .ride-steps.wizard > .actions{
+        bottom: 35px;
+    }
+    .wizard > .actions > ul > li{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

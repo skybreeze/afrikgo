@@ -64,7 +64,7 @@
         </nav>
     </header>
 
-    <section class="find-form ride-form">
+    <section class="find-form ride-form offer-form">
         <div class="container">
             <h3 class="pagetitle">Offer a ride on your next long journey</h3>
         </div>
@@ -72,28 +72,30 @@
 
     <section class="front-content offer-ride">
         <div class="container">
-            <div class="row">
-                
-                <div id="maincontent" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="row">
-                        <div id="" class="col-lg-12">
-                            
-                            <form id="multiphase" role="form" class="form-horizontal ride-steps af-form" action="" method="post">
-                               
-                                <h2>Set Schedule</h2>
-                                <section data-step="0">
+            <div id="maincontent" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div id="" class="col-lg-12">
+
+                        <form id="multiphase" role="form" class="form-horizontal ride-steps af-form" action="" method="post">
+
+                            <!-- Set Schedule Content -->
+                            <h2>Set Schedule</h2>
+                            <section data-step="0">
+                                <div class="form-container">
                                     <div class="form-item">
                                         <h2 class="form-subtitle"><span class="form-number">1</span> Pick Up and Drop Off Points</h2>
                                         <div class="form-group">
-                                            <input type="text" name="" class="field" placeholder="Pickup location">
+                                            <input type="text" name="stepspickup" class="field" placeholder="Pickup location">
                                             <span><img src="images/Icon-Location.png"></span>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="" class="field" placeholder="Drop off location">
+                                            <input type="text" name="stepsdrop" class="field" placeholder="Drop off location">
                                             <span><img src="images/Forma.png"></span>
                                         </div>
                                     </div>
-                                    
+                                </div>
+
+                                <div class="form-container">
                                     <div class="form-item stop-over">
                                         <h2 class="form-subtitle has-caption"><span class="form-number">2</span> Stopovers</h2>
                                         <p class="form-caption">
@@ -101,36 +103,38 @@
                                             sure way to fill your car.
                                         </p>
                                         <div class="form-group">
-                                            <input type="text" name="" class="field" placeholder="Add city on your route">
-                                            <span><img src="images/Forma.png"></span>
+                                            <input type="text" name="stepscity" class="field" placeholder="Add city on your route">
+                                            <span><img src="images/icon-building.png"></span>
                                             <a href="#" class="form-link">+ Add more stopover cities</a>
                                         </div>
                                     </div>
-                                    
+                                </div>
+
+                                <div class="form-container form-last">
                                     <div class="form-item">
                                         <h2 class="form-subtitle"><span class="form-number">3</span> Date &amp; Time</h2>
                                         <div class="form-group">
-                                            <div class="form-left col-lg-6">
-                                                <input type="text" name="" class="field" placeholder="Travel date">
+                                            <div class="form-left col-xs-6">
+                                                <input type="text" name="traveldate" class="field" placeholder="Travel date">
                                                 <span><img src="images/Icon-Date.png"></span>
                                             </div>
-                                            <div class="form-right col-lg-6">
-                                                <input type="text" name="" class="field" placeholder="Travel time">
+                                            <div class="form-right col-xs-6">
+                                                <input type="text" name="traveltime" class="field" placeholder="Travel time">
                                                 <span><img src="images/Icon-Time.png"></span>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="form-left col-lg-6">
-                                                <input type="text" name="" class="field" placeholder="Return date">
+                                            <div class="form-left col-xs-6">
+                                                <input type="text" name="returndate" class="field" placeholder="Return date">
                                                 <span><img src="images/Icon-Date.png"></span>
                                             </div>
-                                            <div class="form-right col-lg-6">
-                                                <input type="text" name="" class="field" placeholder="Return time">
+                                            <div class="form-right col-xs-6">
+                                                <input type="text" name="returntime" class="field" placeholder="Return time">
                                                 <span><img src="images/Icon-Time.png"></span>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="check-content">
+                                            <div class="check-content white-check">
                                                 <input type="checkbox" name="terms" id="btncom" value="1">
                                                 <label for="btncom">
                                                     <span></span>
@@ -139,86 +143,305 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                </section>
-                                
-                                <h2>Ride Details</h2>
-                                <section data-step="1">
-                                    <h2>Pick Up and Drop Off Points</h2>
-                                    <div class="form-group">
-                                        <label for="pd_lastname" class="col-lg-2 control-label">Last Name:</label>
-                                        <div class="col-lg-3">
-                                            <input type="text" name="" class="field" placeholder="Leaving from..">
-                                            <span><img src="images/Icon-Location.png"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pd_firstname" class="col-lg-2 control-label">First Name:</label>
-                                        <div class="col-lg-3">
-                                            <input type="text" name="pd_firstname" id="pd_firstname" class="form-control" placeholder="First Name" value="" tabindex="2">
-                                        </div>
-                                    </div>
-                                </section>
-                                
-                                <h2>Finish</h2>
-                                <section data-step="2">
-                                    <h2>Reference Details:</h2>
+                                </div>
 
-                                    <hr>
-                                    <div class="form-group">
-                                        <label for="rd_schoolrefname" class="col-lg-3 control-label">School Principal's Name:</label>
-                                        <div class="group-input col-lg-3">
-                                            <input type="text" name="" class="field" placeholder="Leaving from..">
-                                            <span><img src="images/Icon-Location.png"></span>
+                            </section>
+
+                            <!-- Ride Detail Content -->
+                            <h2>Ride Details</h2>
+                            <section data-step="1" class="steps-detail">
+
+                                <div class="form-container">
+                                    <div class="form-item">
+
+                                        <h2 class="form-subtitle"><span class="form-number">4</span> Passenger Retribution</h2>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Accra - Ashiaman</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[1]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[1]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[1]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Ashiaman - Sunyani</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[2]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[2]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[2]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Sunyani - Kummasi</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[3]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[3]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[3]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="steps-separator">
+
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Accra - Kummasi</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[4]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[4]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[4]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-container">
+                                    <div class="form-item">
+
+                                        <h2 class="form-subtitle"><span class="form-number">5</span> Seats</h2>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-seat"></span> Number of seats</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <input type="text" name="quant[5]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[5]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[5]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="check-content white-check">
+                                                <input type="checkbox" name="terms" id="btncount" value="1">
+                                                <label for="btncount">
+                                                    <span></span>
+                                                </label>
+                                                <span class="check-label">Max. 2 in the back seats</span>
+                                                <p class="add-label">Guarantee max. 2 people in the back of the car (preferred by passengers)</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-container form-last or-detail">
+                                    <div class="form-item">
+
+                                        <h2 class="form-subtitle"><span class="form-number">6</span> Ride Details</h2>
+                                        <div class="form-group">
+                                            <textarea name="ridedesc" id="jumlah" class="field" placeholder="Please add further details about your ride - it'll save you from replying to lots of messages from passengers."></textarea>
+                                        </div>
+
+                                        <p class="form-caption">
+                                            Please don't add your contact details here. Interested passengers will get your phone number individually.
+                                            <a href="#" class="form-link">(See our guidelines)</a>
+                                        </p>
+
+                                        <div class="form-group">
+                                            <div class="field select-field">
+                                                <select>
+                                                    <option value="0">Max Luggage</option>
+                                                </select>
+                                                <span class="af-icon ico-down-blue"></span>
+                                            </div>
+                                            <span><img src="images/icon-briefcase-small.png"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="field select-field">
+                                                <select>
+                                                    <option value="0">Pickup Flexibility</option>
+                                                </select>
+                                                <span class="af-icon ico-down-blue"></span>
+                                            </div>
+                                            <span><img src="images/icon-briefcase-small.png"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="field select-field">
+                                                <select>
+                                                    <option value="0">Possible Detour</option>
+                                                </select>
+                                                <span class="af-icon ico-down-blue"></span>
+                                            </div>
+                                            <span><img src="images/icon-briefcase-small.png"></span>
+                                        </div>
+
+                                        <div class="form-group or-terms">
+                                            <div class="check-content white-check">
+                                                <input type="checkbox" name="terms" id="btnaccept" value="1">
+                                                <label for="btnaccept">
+                                                    <span></span>
+                                                </label>
+                                                <p class="check-label">I accept the T&amp;Cs and Privacy Policy, and certify that I hold a driving license and have valid car insurance.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <h2>Finish</h2>
+                            <section data-step="2" class="steps-finish">
+                                <div class="form-container">
+
+                                    <div class="form-item finish-top">
+                                        <h2 class="form-subtitle">Already A Member?</h2>
+                                        <div class="form-group">
+                                            <input type="text" name="stepuser" class="field" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="stepuser" class="field" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="steplogin" id="steplogin" class="btn btn-afg btn-blue" value="log in">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <div class="check-content">
+                                                    <input type="checkbox" name="terms" id="btnremember" value="1">
+                                                    <label for="btnremember">
+                                                        <span></span>
+                                                    </label>
+                                                    <span class="add-label">Remember Me</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <a href="#" class="form-link">Forgot Password?</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="rd_schoolrefmobile" class="col-lg-3 control-label">Phone or Mobile No.:</label>
-                                        <div class="col-lg-2">
-                                            <input type="text" name="rd_schoolrefmobile" id="rd_schoolrefmobile" class="form-control" placeholder="Phone or Mobile Number" data-mask="+99-99999-99999" value="" tabindex="2">
+
+                                    <div class="form-item finish-bottom">
+                                        <h2 class="form-subtitle">Not a member yet?</h2>
+                                        <div class="form-group top-subtitle">
+                                            <p class="form-caption">Create your account now</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <input type="text" name="firstname" id="firstname" class="field" placeholder="First name">
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <input type="text" name="lastname" id="firstname" class="field" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="memberemail" class="field" placeholder="Email address">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="datebirth" id="datebirth" class="field" placeholder="Date of Birth">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="check-content white-check">
+                                                <input type="radio" name="gender" id="btnmale" value="1">
+                                                <label for="btnmale">
+                                                    <span></span>
+                                                </label>
+                                                <span class="add-label">Male</span>
+                                            </div>
+                                            <div class="check-content white-check">
+                                                <input type="radio" name="gender" id="btnfemale" value="1">
+                                                <label for="btnfemale">
+                                                    <span></span>
+                                                </label>
+                                                <span class="add-label">Female</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="memberpass" id="memberpass" class="field" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="memberepass" id="memberepass" class="field" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="steplogin" id="steplogin" class="btn btn-afg btn-blue" value="sign up">
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="form-caption">
+                                                By signing up, you agree to our terms of service and privacy policy.
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="rd_schoolrefemail" class="col-lg-3 control-label">E-Mail ID:</label>
-                                        <div class="col-lg-3">
-                                            <input type="text" name="rd_schoolrefemail" id="rd_schoolrefemail" class="form-control" placeholder="E-Mail ID" value="" tabindex="3">
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- end of wizard-->
-                            </form>
-                            
-                            <!-- end of form-->
-                        </div>
+
+                                </div>
+
+
+                            </section>
+                            <!-- end of wizard-->
+                        </form>
+
+                        <!-- end of form-->
                     </div>
-			        <!-- end of row-->
-                   
-                    <div class="modal fade" id="welcomeModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h1 class="modal-title text-center">Add new last name</h1>
-                                </div>
-                                <div class="modal-body">
-                                    <form method="POST" name="add_lastname">
-                                        <input type="text" name="add_lastname" id="add_lastname" class="form-control" placeholder="Enter your last name here" value="">
-                                        <p class="">The first alphabet of the last name <strong>MUST</strong> be in upper case.</p>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-                                    <input name="addlastname" type="submit" value="Add" class="btn btn-primary">
-                                </div>
+                </div>
+                <!-- end of row-->
+
+                <div class="modal fade" id="welcomeModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1 class="modal-title text-center">Add new last name</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form method="POST" name="add_lastname">
+                                    <input type="text" name="add_lastname" id="add_lastname" class="form-control" placeholder="Enter your last name here" value="">
+                                    <p class="">The first alphabet of the last name <strong>MUST</strong> be in upper case.</p>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                <input name="addlastname" type="submit" value="Add" class="btn btn-primary">
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-                
-                <div class="row hidden-print">
-                    <div id="footer" class="col-lg-12"></div>
-                </div>                    
+
+            </div>
+
+            <div class="row hidden-print">
+                <div id="footer" class="col-lg-12"></div>
             </div>
         </div>
     </section>
@@ -278,9 +501,10 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     
+    <!-- Steps Content with Validation -->
     <script src="plugins/form-validation/js/formValidation.min.js"></script>
     <script src="plugins/form-validation/js/framework/bootstrap.min.js"></script>
-    <script src="plugins/form-validation/vendor/jquery.steps/js/jquery.steps.min.js"></script>
+    <script src="plugins/form-validation/vendor/jquery.steps/js/jquery.steps.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             function adjustIframeHeight() {
@@ -295,6 +519,13 @@
                 headerTag: "h2",
                 bodyTag: "section",
                 saveState: true,
+                transitionEffect: $.fn.steps.transitionEffect.slideLeft,
+                transitionEffectSpeed: 500,
+                enableFinishButton: false,
+                enablePreviousButton: false,
+                labels: {
+                    next: "Continue"
+                },
                 onStepChanged: function(e, currentIndex, priorIndex) {
                         // You don't need to care about it
                         // It is for the specific demo
@@ -349,101 +580,70 @@
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                    //last name validation  
-                    sd_lastname: {
+                    //Pick-up location validation  
+                    stepspickup: {
                         container: 'popover',
                         validators: {
                             notEmpty: {
-                                message: 'The Last Name is required and cannot be empty'
+                                message: 'Please insert pickup location'
+                            }
+                        }
+                    },
+                    //Drop-off location validation
+                    stepsdrop: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please insert drop-off location'
+                            }
+                        }
+                    },
+                    
+                    // Stop over City
+                    stepscity: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please specify the city for stopover'
                             }
                         }
                     },
                     //first name validation
-                    sd_firstname: {
+                    traveldate: {
                         container: 'popover',
                         validators: {
                             notEmpty: {
-                                message: 'The First Name is required and cannot be empty'
-                            },
-                            stringLength: {
-                                min: 3,
-                                max: 30,
-                                message: 'The First Name must be more than 7 and less than 30 characters long'
-                            },
-                            regexp: {
-                                regexp: /^[A-Z]+$/i,
-                                message: 'The First Name can only consist of alphabetical characters'
-                            }
-                        }
-                    },
-                    //validation of Parent's details step start
-                    //last name validation  
-                    pd_lastname: {
-                        container: 'popover',
-                        validators: {
-                            notEmpty: {
-                                message: 'The Last Name is required and cannot be empty'
-                            }
-                        }
-                    },
-                    //first name validation
-                    pd_firstname: {
-                        container: 'popover',
-                        validators: {
-                            notEmpty: {
-                                message: 'The First Name is required and cannot be empty'
-                            },
-                            stringLength: {
-                                min: 3,
-                                max: 30,
-                                message: 'The First Name must be more than 7 and less than 30 characters long'
-                            },
-                            regexp: {
-                                regexp: /^[A-Z]+$/i,
-                                message: 'The First Name can only consist of alphabetical characters'
+                                message: 'Fill the blank date travel!'
                             }
                         }
                     },
                     // Validation for Reference details starts
                     //School reference name
-                    rd_schoolrefname: {
+                    traveltime: {
                         container: 'popover',
                         validators: {
                             notEmpty: {
-                                message: 'The School Reference Name is required and cannot be empty'
-                            },
-                            stringLength: {
-                                min: 7,
-                                max: 40,
-                                message: 'The School Reference Name must be more than 7 and less than 40 characters long'
-                            },
-                            regexp: {
-                                regexp: /^[A-Z\s]+$/i,
-                                message: 'The School Reference Name can only consist of alphabetical characters'
+                                message: 'Fill the blank time travel!'
                             }
                         }
                     },
                     //School reference phone
-                    rd_schoolrefmobile: {
+                    returndate: {
                         container: 'popover',
                         validators: {
                             notEmpty: {
-                                message: 'The Phone or Mobile is required and cannot be empty'
+                                message: 'Please fill the return date field'
                             }
                         }
                     },
-                    rd_schoolrefemail: {
+                    returntime: {
                         container: 'popover',
                         validators: {
                             notEmpty: {
-                                message: 'The E-Mail ID is required and cannot be empty'
-                            },
-                            regexp: {
-                                regexp: /[a-zA-Z0-9]+(?:(\.|_)[A-Za-z0-9!#$%&'*+\/=?^`{|}~-]+)*@(?!([a-zA-Z0-9]*\.[a-zA-Z0-9]*\.[a-zA-Z0-9]*\.))(?:[A-Za-z0-9](?:[a-zA-Z0-9-]*[A-Za-z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?/g,
-                                message: 'The E-Mail ID is not a valid E-Mail'
+                                message: 'Please fill the return time field'
                             }
                         }
-                    },
+                    }
                 }
 
             })
@@ -451,6 +651,92 @@
         });
     </script>
     
+    <!-- Textfield Plus Minus -->
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('.btn-counter').click(function(e){
+                e.preventDefault();
+
+                var fieldName = $(this).attr('data-field');
+                var type      = $(this).attr('data-type');
+                var input = $("input[name='"+fieldName+"']");
+                var currentVal = parseInt(input.val());
+                if (!isNaN(currentVal)) {
+                    if(type == 'minus') {
+                        var minValue = parseInt(input.attr('min')); 
+                        if(!minValue) minValue = 0;
+                        if(currentVal > minValue) {
+                            input.val(currentVal - 1).change();
+                        } 
+                        if(parseInt(input.val()) == minValue) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    } else if(type == 'plus') {
+                        var maxValue = parseInt(input.attr('max'));
+                        if(!maxValue) maxValue = 9999999999999;
+                        if(currentVal < maxValue) {
+                            input.val(currentVal + 1).change();
+                        }
+                        if(parseInt(input.val()) == maxValue) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    }
+                } else {
+                    input.val(0);
+                }
+            });
+            $('.counter-nomina').focusin(function(){
+               $(this).data('oldValue', $(this).val());
+            });
+            $('.counter-nomina').change(function() {
+
+                var minValue =  parseInt($(this).attr('min'));
+                var maxValue =  parseInt($(this).attr('max'));
+                if(!minValue) minValue = 0;
+                if(!maxValue) maxValue = 9999999999999;
+                var valueCurrent = parseInt($(this).val());
+
+                var name = $(this).attr('name');
+                if(valueCurrent >= minValue) {
+                    $(".btn-counter[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the minimum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+                if(valueCurrent <= maxValue) {
+                    $(".btn-counter[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the maximum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+
+
+            });
+            $(".counter-nomina").keydown(function (e) {
+                    // Allow: backspace, delete, tab, escape, enter and .
+                    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                         // Allow: Ctrl+A
+                        (e.keyCode == 65 && e.ctrlKey === true) || 
+                         // Allow: home, end, left, right
+                        (e.keyCode >= 35 && e.keyCode <= 39)) {
+                             // let it happen, don't do anything
+                             return;
+                    }
+                    // Ensure that it is a number and stop the keypress
+                    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                        e.preventDefault();
+                    }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $('a[href*="#previous"]').each(function() {
+            alert("Contains #previous");
+        });
+    </script>
     
 </body>
 </html>

@@ -14,7 +14,6 @@ h2{
 	font-weight: normal;
 	color:rgb(39,136,230);
 	line-height: 1.2;
-	font-size: 45px;
 }
 h4,
 .list-profile h4{
@@ -22,54 +21,6 @@ h4,
 	font-weight:normal;
 	/*line-height: 2.3;*/
 }
-<<<<<<< HEAD
-=======
-/* FONTS */
-@font-face {
-    font-family: 'Rubik Light';
-      src: url('fonts/rubiklight.eot'); /* IE9 Compat Modes */
-      src: url('fonts/rubiklight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-           url('fonts/rubiklight.woff2') format('woff2'), /* Super Modern Browsers */
-           url('fonts/rubiklight.woff') format('woff'), /* Super Modern Browsers */
-           url('fonts/rubiklight.ttf')  format('truetype'), /* Safari, Android, iOS */
-           url('fonts/rubiklight.svg#svgFontName') format('svg'); /* Legacy iOS */
-  	font-weight: normal;
-  	font-style: normal;
-}
-@font-face {
-	font-family: 'Rubik Medium';
-      src: url('fonts/rubikmedium.eot'); /* IE9 Compat Modes */
-      src: url('fonts/rubikmedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-           url('fonts/rubikmedium.woff2') format('woff2'), /* Super Modern Browsers */
-           url('fonts/rubikmedium.woff') format('woff'), /* Super Modern Browsers */
-           url('fonts/rubikmedium.ttf')  format('truetype'), /* Safari, Android, iOS */
-           url('fonts/rubikmedium.svg#svgFontName') format('svg'); /* Legacy iOS */
-  	font-weight: normal;
-  	font-style: normal;
-}
-@font-face {
-  	font-family: 'Rubik Regular';
-      src: url('fonts/rubikregular.eot'); /* IE9 Compat Modes */
-      src: url('fonts/rubikregular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-           url('fonts/rubikregular.woff2') format('woff2'), /* Super Modern Browsers */
-           url('fonts/rubikregular.woff') format('woff'), /* Super Modern Browsers */
-           url('fonts/rubikregular.ttf')  format('truetype'), /* Safari, Android, iOS */
-           url('fonts/rubikregular.svg#svgFontName') format('svg'); /* Legacy iOS */
-  	font-weight: normal;
-  	font-style: normal;
-}
-/*header .container .navbar-right {
-	padding-top: 10px;
-	min-height: 50px;
-}*/
-.arrow img{
-	margin-left: 10px;
-	margin-bottom: 5px;
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-}
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 .detail a,
 .detail a:hover,
 .detail a:focus,
@@ -84,27 +35,8 @@ h4,
 {
 	background-image: url('../img/pattern.jpg');
 	background-repeat: repeat-x;
-<<<<<<< HEAD
 	background-position: 0 35px;
 	/*min-height: 225px;*/
-=======
-	background-position: 0 75px;
-	/*top: 280px;*/
-/*	min-height: 225px;*/
-}
-.body-content ul li{
-	padding-top: 25px;
-	text-decoration: none;
-	padding-left: 35px;
-	line-height:10em;
-	font-weight: 500;
-	font-size: 16px;
-	color: rgb(102,113,124);
-}
-.body-content .pull-right{
-	margin-top: 25px;
-	margin-right: 35px;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 }
 .header-msg{
 	background-image: url('../img/pattern.jpg');
@@ -128,7 +60,6 @@ h4,
 .body-content .active > a
 {
   color:rgb(39, 136, 230);
-<<<<<<< HEAD
   background-image: url(../img/active.png);
   background-repeat: no-repeat;
   background-position: left -10px bottom 10px;
@@ -147,31 +78,6 @@ h4,
 .content,
 .nav-footer{
 	width: 90%;
-=======
-  /*text-shadow:1px 0px 1px #cdddf2, 0px 1px 1px #f5f5f5, 
-    2px 1px 1px #cdddf2, 1px 2px 1px #f5f5f5,
-    3px 2px 1px #cdddf2, 2px 3px 1px #f5f5f5,
-    4px 3px 1px #cdddf2, 3px 4px 1px #f5f5f5,
-    5px 4px 1px #cdddf2, 4px 5px 1px #f5f5f5,
-    6px 5px 1px #cdddf2, 5px 6px 1px #f5f5f5,
-    7px 6px 1px #cdddf2;*/
-}
-.body-content button{
-    font-size: 14px;
-    float: right;
-    font-weight: 500;
-    margin-top: 30px;
-    margin-right: 10%;
-}
-.body-content .img-circle{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.body-content .row,
-.content,
-.nav-footer{
-	width: 100%;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
@@ -179,48 +85,6 @@ h4,
 .content .notif{
 	margin-left: 40px;
 	margin-top: 25px;
-<<<<<<< HEAD
-}
-.body-content .me{
-	background-color: #f5f5f5;
-	margin-bottom: 25px;
-}
-.body-content .minim-panel{
-	width: 75%;
-}
-.body-content .wto-content{
-	margin-top: 150px;
-}
-.detail{
-	padding-bottom: 15px;
-}
-.detail,
-.rides{
-	vertical-align: middle;
-	padding-top: 15px;
-}
-.detail p,
-.list-profile p{
-=======
-}
-.content .panel{
-	padding: 10px;
-}
-.content .list-profile li,
-.content h4,
-.content .progress
-{
-	padding: 10px;
-}
-.content .list-profile{
-	font-size: 14px;
-}
-.content h4{
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
-	font-size: 16px;
-	color: rgb(68,72,76);
-	font-weight: 500;
-	margin-left: 10px;
 }
 .body-content .me{
 	background-color: #f5f5f5;
@@ -243,34 +107,14 @@ h4,
 .detail p,
 .list-profile p{
 	font-size: 16px;
-	color: rgb(102,113,124);
+	/*color: rgb(102,113,124);*/
 	font-weight: 500;
-}
-.detail .nominal{
-	font-size: 22px;
-	color:rgb(39,136,230);
-	text-align: right;
-}
-.detail .calendar{
-	text-align: right;
-}
-.msg-detail p{
-	font-size: 16px;
-	color: rgb(102,113,124);
-	font-weight: 500;
-	margin-left: 10px;
-}
-.msg-detail .text-detail{
-	font-size: 15px;
-	color: rgb(118,118,118);
-	font-weight: normal;
 	margin-left: 10px;
 }
 .detail h4{
 	font-size: 25px;
 	margin-left: 10px;
 }
-<<<<<<< HEAD
 /*.detail p:last-child{
 	font-size: 15px;
 	font-weight: normal;
@@ -293,25 +137,6 @@ h4,
 .detail-btn{
 	margin-top: 50px;
 }
-=======
-.detail .rides{
-	font-weight: normal;
-}
-.detail .rides .nominal{
-	font-size: 25px;
-	color:rgb(39,136,230);
-	text-align: right;
-	padding-bottom: 5px;
-}
-.detail .rides .pull-right,
-.body-content .pull-right{
-	text-align: right;
-}
-
-.detail-btn{
-	margin-top: 85px;
-}
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 .detail .text-muted{
 	font-weight: normal;
 }
@@ -326,18 +151,6 @@ h4,
 	margin-top: 0;
 	margin-bottom: 0;
 }
-<<<<<<< HEAD
-=======
-#messages img{
-	margin-top: 39px;
-	margin-bottom: 30px;
-	
-}
-#messages .detail .icon{
-	margin-top: 0;
-	margin-bottom: 0;
-}
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 .rides .glyphicon-calendar{
 	color:rgb(39,136,230);
 }
@@ -348,20 +161,12 @@ h4,
 	font-size: 40px;
 }
 .header{
-<<<<<<< HEAD
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
 .nav-footer{
 	margin-top: 112px;
-=======
-	width: 100%;
-	margin-bottom: 35px;
-}
-.nav-footer{
-	margin-top: 255px;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 	
 }
 .nav-footer h4{
@@ -387,17 +192,8 @@ h4,
 #messages,
 #messages .img
 {
-<<<<<<< HEAD
 	margin-top: 15px;
-=======
-	margin-top: 0;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 	margin-bottom: 30px;
-}
-#messages h4{
-	font-size: 25px;
-	color: rgb(39,136,230);
-	font-weight: normal;
 }
 #border-bottom{
 	border: 0.1px solid #ebebeb;
@@ -408,25 +204,10 @@ h4,
 }
 .bottom-detail,
 .bottom-detail a{
-<<<<<<< HEAD
-=======
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	color:rgb(118,118,118);
-	margin-bottom: 35px;
-}
-.bottom-detail a:hover,
-.bottom-detail a:focus,
-.footer a:hover,
-.footer a:focus{
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-<<<<<<< HEAD
 	color:rgb(118,118,118);
 	margin-bottom: 35px;
 }
@@ -440,10 +221,6 @@ h4,
 	text-decoration: none;
 	color:#337ab7;
 }
-=======
-	color:#337ab7;
-}
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 .footer,
 .footer a{
 	margin-top: 50px;
@@ -456,7 +233,6 @@ h4,
 	text-decoration: none;
 
 }
-<<<<<<< HEAD
 
 @media(min-width: 768px){
 	.verticalLine {
@@ -510,364 +286,4 @@ h4,
 	#messages img{
 		text-align: center;
 	}
-=======
-.verticalLine {
-	  border-right: 1px solid rgb(229,229,229);
-	  height: 87px;
-	  margin: auto;
-}
-
-.modal-footer img{
-	margin-top: 25px;
-	right: 0;
-}
-.modal-footer h4{
-	font-size: 25px;
-	color: rgb(39,136,230);
-	font-weight: normal;
-	padding-left: 0;	
-}
-#messages-wo{
-	margin-top: 115px;
-}
-.dialog{
-	margin-left: 25px;
-	margin-right: 25px;
-
-}
-.dialog .row{
-	padding-top: 20px;
-	padding-left: 20px;
-}
-@media(min-width: 1031px){
-	#messages .detail .nominal-display{
-			display: none;
-		}
-	.detail .nominal,
-	.rides .nom{
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: right;
-	}
-	.rides .calendar{
-		text-align: right;
-	}
-	#messages .detail h4{
-		padding-left: 0;
-	}
-	#messages {
-		position: relative;
-	}
-	#messages .rides{
-		position: absolute;
-		top: 30px;
-		right: 0;
-	}
-}
-@media(min-width: 1024px)and (max-width: 1030px){
-	.content .col-md-3{
-		width:35% ;
-	}
-	.content .col-md-9{
-		width: 65%;
-	}
-	.container{
-		width: 100%;
-		margin-left: 0;
-	}
-	.btn-primary {
-	    color: #fff;
-	    background-color: rgb(39,136,230);
-	    font-weight: 500;
-	    height: 45px;
-	    font-size: 15px;
-	    min-width: 0;
-	}
-	.detail h4{
-		padding-left: 0;
-	}
-	#messages .detail .icon{
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	#messages .detail .nominal-display{
-		display: none;
-	}
-	.detail .nominal{
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: right;
-	}
-	.detail .calendar{
-		text-align: right;
-	}
-	.detail .nominal,
-	.rides .nom{
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: right;
-	}
-	.rides .calendar{
-		text-align: right;
-	}
-	#messages .detail h4{
-		padding-left: 0;
-	}
-	#messages {
-		position: relative;
-	}
-	#messages .rides{
-		position: absolute;
-		top: 30px;
-		right: 0;
-	}
-}
-@media(min-width: 768px) and (max-width: 1024px){
-	.navbar-header{
-		width: 100%;
-		text-align: center;
-	}
-	.verticalLine {
-	  border-right: 0px;
-	  height: 87px;
-	  margin: auto;
-	}
-	.content .col-md-3{
-		width:75% ;
-	}
-	.msg-detail h4,
-	.msg-detail p{
-		text-align: center;
-	}
-	.content{
-		margin-left: 0;
-	}
-	#messages-wo {
-		position: relative;
-	}
-	#messages-wo .rides{
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	#messages .col-md-8,
-	#messages .col-md-8 .col-md-4{
-	margin-left: 0;
-	padding-left: 0;
-	}
-	.navbar-nav > li > a{
-		line-height: 1em;
-	}
-	.body-content .row{
-		width: 100%;
-	}
-	.body-content ul li{
-		padding: 0;
-/*		width: 100%;*/
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	.body-content button{
-		margin-top: 0;
-		float: left;
-		margin-left: 3%;
-		display: block;
-		min-width: 220px
-	}
-	.detail{
-		text-align: center;
-	}
-	.detail h4{
-		padding-left: 0;
-	}
-	#messages img{
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-	#messages .nominal{
-		display: none;
-	}
-	.detail .text-muted{
-		margin-top: 15px;
-	}
-	.detail .calendar{
-		text-align: center;
-	}
-	.detail .nominal-display{
-		margin-top: 15px;
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: center;
-	}
-	.body-content button{
-		width: auto;
-	}
-}
-@media(max-width: 768px){
-	body{
-		overflow-x:hidden;
-	}
-  .verticalLine {
-	  border-right: 0px;
-	  height: 87px;
-	  margin: auto;
-	}
-  	.detail,
-  	.detail img{
-  		text-align: center;
-  		margin-bottom: 30px;
-  	}
-  	.detail .rides{
-  		text-align: center;
-  		margin-top: 25px;
-  	}
-  	.detail .rides .pull-right,
-  	.detail .rides .nominal{
-	text-align: center;
-	}
-	.body-content .minim-panel{
-	width: 75%;
-	}
-	.body-content .panel .panel-default{
-		margin-right: 55px;
-		width: 80%;
-	}
-	.body-content ul li{
-		padding: 0;
-	}
-	.body-content button{
-		margin-top: 0;
-		float: left;
-		margin-left: 3%;
-		display: block;
-		min-width: 220px
-	}
-	.detail{
-		text-align: center;
-	}
-	.detail h4{
-		padding-left: 0;
-	}
-	#messages-wo {
-		position: relative;
-	}
-	#messages-wo .rides{
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	#messages img{
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-	#messages .nominal{
-		display: none;
-	}
-	.detail .text-muted{
-		margin-top: 15px;
-	}
-	.detail .calendar{
-		text-align: center;
-	}
-	.detail .nominal-display{
-		margin-top: 15px;
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: center;
-	}
-	.body-content button{
-		width: auto;
-	}
-}
-@media (max-width: 420px){
-	body{
-		overflow-x: hidden;
-	}
-	.nav-footer .col-xs-12,
-	.detail {
-		width: 100%;
-	}
-	.list div{
-  		width: 50%;
-  	}
-  	.verticalLine {
-	  border-right: 0px;
-	  height: 87px;
-	  margin: auto;
-	}
-	#messages-wo {
-		position: relative;
-	}
-	#messages-wo .rides{
-		position: absolute;
-		top: 75px;
-		right: 50px;
-	}
-	#messages .col-md-2{
-		width: 100%;
-	}
-	#messages h4{
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 35px;
-	}
-	#messages img{
-		text-align: center;
-	}
-	.body-content ul li{
-		padding: 0;
-	}
-	.body-content button{
-		margin-top: 0;
-		float: left;
-		margin-left: 5%;
-		display: block;
-		min-width: 220px
-	}
-	.detail{
-		text-align: center;
-	}
-	.detail h4{
-		padding-left: 0;
-	}
-	#messages img{
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-	#messages .nominal{
-		display: none;
-	}
-	.msg-detail h4,
-	.msg-detail p{
-		text-align: center;
-	}
-	.detail .text-muted{
-		margin-top: 15px;
-	}
-
-	.detail .nominal-display{
-		margin-top: 15px;
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: center;
-	}
-	.rides .nom{
-		font-size: 22px;
-		color:rgb(39,136,230);
-		text-align: center;
-	}
-	.rides .calendar{
-		text-align: center;
-	}
-	.body-content button{
-		width: auto;
-	}
-	.content .notif {
-    margin-left: 0;
-    margin-top: 25px;
-	}
-    #messages-wo img{
-    	text-align: center;
-    }
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 }

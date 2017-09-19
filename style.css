@@ -7,11 +7,7 @@ body {
 }
 
 body {
-<<<<<<< HEAD
-	background: #fefefe;
-=======
 /*	background: #fefefe;*/
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -1529,10 +1525,7 @@ a:hover {
 	font-size: 16px;
 	background: #fff;
 	font-family: "Rubik Medium", Fallback, sans-serif;
-<<<<<<< HEAD
-=======
     border-bottom: 1px solid #ddd;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 }
 .panel-heading a {
 	text-decoration: none;
@@ -2399,28 +2392,19 @@ a:hover {
 }
 @media screen and (max-width: 680px) {
   .homepage-hero .header{
-<<<<<<< HEAD
-		height: 700px
-=======
 		height: auto;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 	}
   .homepage-hero .header .bg {
     justify-content: flex-start;
     text-align: center;
     background-position: 40% 100%;
     background-size: 150% auto;
-<<<<<<< HEAD
-=======
     height: 760px;
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
   }
   .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
     margin: 0 auto;
   }
 }
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 489px) {
   .homepage-hero .header{
     height: auto;
@@ -2436,7 +2420,6 @@ a:hover {
     background-position: bottom center;
   }
 }
->>>>>>> dbaa0c3752b1ac92963d587bfee34f88efabfe9d
 @media screen and (max-width: 800px) {
 	.aboutus-hero .header {
 		height: 650px;
