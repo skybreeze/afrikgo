@@ -1241,6 +1241,54 @@ a:focus{
     margin-top: 0;
 }
 
+/* - Success - */
+.success-steps{
+    padding-top: 300px;
+}
+.success-steps .success-panel{
+    width: 100%;
+    max-width: 778px;
+    padding: 50px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.success-steps .success-title{
+    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: #415161;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+}
+.success-steps .success-thumbnail{
+    margin-bottom: 22px;
+    height: 68px;
+}
+.success-steps .success-thumbnail img{
+    display: inline-block;
+}
+.success-steps .success-subtitle{
+    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: #2788e6;
+    margin-bottom: 16px;
+}
+.success-steps .success-desc{
+    font-family: 'Rubik Light', Fallback, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: #767676;
+}
+.success-steps .success-center{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 @media screen and (max-width: 991px){
     /* --- Find A Ride --- */
@@ -1291,6 +1339,11 @@ a:focus{
     
 }
 @media screen and (max-width: 767px){
+    /* --- General --- */
+    .ride-form .over-text{
+        font-size: 32px;
+    }
+    
     /* --- Find A Ride --- */
     .ride-form .find-form-wrapper .input-leaving,
     .ride-form .find-form-wrapper .input-going{
@@ -1329,6 +1382,18 @@ a:focus{
     .ride-steps .form-container{
         padding-left: 30px;
         padding-right: 30px;
+    }
+    /* - Sucess - */
+    .success-steps{
+        padding-top: 80px;
+    }
+    .success-steps .success-item{
+        margin-bottom: 30px;
+    }
+    .success-steps .success-desc{
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }

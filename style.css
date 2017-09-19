@@ -124,9 +124,11 @@ a:hover {
 @media (max-width: 860px) {
 	.main-navbar .navbar-nav {
 		margin: 0 auto;
-		width: 720px;
+		width: 100%;
 		margin-top: 80px;
 		float: none !important;
+        text-align: center;
+        padding-left: 0;
 	}
 	.short-nav .navbar-nav {
 		margin: 0 auto;
@@ -161,6 +163,8 @@ a:hover {
 @media (max-width: 885px){
 	.main-navbar .navbar-nav > li {
 		margin: 0 0px;
+        display: inline-block;
+        float: none;
 	}
 }
 .main-navbar .navbar-nav > li > a.signup {
