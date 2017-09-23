@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <header>
+     <header>
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -36,14 +36,14 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">DASHBOARD</a></li>
-              <li><a href="#">RIDES</a></li>
+              <li><a href="22.dashboard.html">DASHBOARD</a></li>
+              <li><a href="23.offered-1.html">RIDES</a></li>
               <li class="active"><a href="#">BOOKINGS</a></li>
               <li><a href="#">MESSAGES</a></li>
               <li><a href="#">PAYMENT</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="25px" height="25px"> AMANDA JONES <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <!-- <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="45px" height="45px"> --> AMANDA JONES <span class="arrow"><img src="../images/IconArrowblue.png"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                 </ul>
@@ -58,7 +58,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3">
-            <h2>Bookings</h2>
+            <h2>Messages</h2>
           </div>
         </div>
       </div>
@@ -66,57 +66,103 @@
      <!-- BODY OF CONTENT -->
     <section class="body-content">
       <div class="container">
-          <div class="row">
-            <div class="panel panel-default">
-             <div class="panel-body">
-              <div class="col-xs-12 col-sm-12 col-md-12">
-                <ul class="nav navbar-nav navbar-left">
-                  <li><a href="#">CURRENT</a></li>
-                  <li class="active"><a href="#">HISTORY</a></li>
-                </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <div id="messages">
+          <div class="row minim-panel">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
                   <div class="col-md-2 img text-center">
                     <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
                   </div>
                   <div class="col-md-10 detail">
                     <h4>Michael Butt</h4>
                     <p>ACCRA-KUMMASI</p>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <p class="text-muted">Pick up point</p>
-                      </div>
-                      <div class="col-md-8">
-                       <span><a href="#"><img src="assets/img/logo.png" alt="" width="15px" height="20px">  28A Wellington Rd. Pinner HA5 4NL,UK</a>
-                       </span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <p class="text-muted">Drop off point</p>
-                      </div>
-                      <div class="col-md-8">
-                        <span><a href="#"><img src="assets/img/logo.png" alt="" width="15px" height="20px"> University of Salford, Salford</a>
-                        </span>
-                      </div>
-                    </div>
-                    <hr id="border-bottom" >
                   </div>
+                  <hr id="border-bottom">
+                </div>
+                <form class="dialog">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4>Michael Butt</h4>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-muted">
+                      Hello, I would like to join your ride to Kummasi in next friday. Are you available?
+                    </p>
+                  </div>
+                  <div class="col-md-4 pull-right">
+                    <p class="text-muted">
+                      Yesterday
+                    </p>
+                  </div>
+                </div>
+                <div class="row me">
+                  <div class="col-md-12">
+                    <h4 class="text-muted">Me</h4>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-muted">
+                      Sure. We can meet at 28A Wellington Rd. Pinner HA5 4NL,UK.
+                    </p>
+                  </div>
+                  <div class="col-md-4 pull-right">
+                    <p class="text-muted">
+                      Yesterday
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4>Michael Butt</h4>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-muted">
+                      Ok. Thanks for your confirmation.
+                    </p>
+                  </div>
+                  <div class="col-md-4 pull-right">
+                    <p class="text-muted">
+                      Yesterday
+                    </p>
+                  </div>
+                </div>
+                <div class="row me">
+                  <div class="col-md-12">
+                    <h4 class="text-muted">Me</h4>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-muted">
+                      You're welcome.
+                    </p>
+                  </div>
+                  <div class="col-md-4 pull-right">
+                    <p class="text-muted">
+                      Yesterday
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4" cols="50" placeholder="Type your messages here..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <button type="submit" class="btn btn-default"> ADD ATTACHMENT </button>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary"> SEND </button>
+                  </div>
+                </div>
+                </form>
               </div>
-              
             </div>
           </div>
       </div>
     </section>
+    
     <section class="nav-footer">
       <div class="container">
         <div class="row">

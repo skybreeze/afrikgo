@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rides</title>
+    <title>Messages</title>
 
     <!-- Bootstrap -->
     <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <header>
+     <header>
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -36,14 +36,14 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">DASHBOARD</a></li>
-              <li class="active"><a href="#">RIDES</a></li>
+              <li><a href="22.dashboard.html">DASHBOARD</a></li>
+              <li><a href="23.offered-1.html">RIDES</a></li>
               <li><a href="#">BOOKINGS</a></li>
-              <li><a href="#">MESSAGES</a></li>
+              <li class="active"><a href="#">MESSAGES</a></li>
               <li><a href="#">PAYMENT</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="25px" height="25px"> AMANDA JONES <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <!-- <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="45px" height="45px"> --> AMANDA JONES <span class="arrow"><img src="../images/IconArrowblue.png"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                 </ul>
@@ -58,42 +58,54 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3">
-            <h2>Rides</h2>
+            <h2>Messages</h2>
           </div>
         </div>
       </div>
     </section>
     <section class="body-content">
       <div class="container">
-          <div class="row">
-            <div class="panel panel-default">
-             <div class="panel-body">
-              <div class="col-xs-12 col-sm-12 col-md-9">
-                <ul class="nav navbar-nav navbar-left">
-                  <li class="active"><a href="#">UPCOMING RIDES</a></li>
-                  <li><a href="#">PAST RIDES</a></li>
-                  <li><a href="#">ARCHIVED RIDES</a></li>
-                  <li><a href="#">RIDE ALERT</a></li>
-                </ul>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 wto-content">
+            <div id="messages-wo">
+                <div class="col-md-2 text-center">
+                  <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3">
-                  <button type="button" class="btn btn-primary btn-lg" aria-haspopup="true" aria-expanded="false">CREATE RADE ALERT</button>
+                <div class="col-md-8 detail">
+                  <h4>Michael Butt</h4>
+                  <p>ACCRA-KUMMASI</p>
+                  <p class="text-muted">Hello, I would like to join your ride to Kummasi in next friday. Are you available?
+                  </p>
                 </div>
+                <div class="col-md-2 rides">
+                  <p class="text-muted pull-right">Yesterday</p>
+                </div>
+                <hr id="border-bottom">
               </div>
             </div>
-          </div>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 notif">
-            <p class="text-muted">You don't have any upcoming rides.</p>
-            <p class="text-muted">You can offer a new ride by clicking on:</p>
-            <button type="button" class="btn btn-primary btn-lg" aria-haspopup="true" aria-expanded="false">OFFER A RIDE</button>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div id="messages-wo">
+                <div class="col-md-2 text-center">
+                  <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
+                </div>
+                <div class="col-md-8 detail">
+                  <h4>Michael Butt</h4>
+                  <p>ACCRA-KUMMASI</p>
+                  <p class="text-muted">Hello, I would like to join your ride to Kummasi in next friday. Are you available?
+                  </p>
+                </div>
+                <div class="col-md-2 rides">
+                  <p class="text-muted pull-right">Yesterday</p>
+                </div>
+                <hr id="border-bottom">
+              </div>
+            </div>
+        </div>
+        </div>
     </section>
+    
     <section class="nav-footer">
       <div class="container">
         <div class="row">
@@ -157,5 +169,3 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
-
-          

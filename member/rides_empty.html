@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Messages</title>
+    <title>Rides</title>
 
     <!-- Bootstrap -->
     <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -20,8 +20,8 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-default">
+   <header>
+      <nav class="navbar navbar-default nav-db">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,15 +35,19 @@
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">DASHBOARD</a></li>
-              <li><a href="#">RIDES</a></li>
-              <li><a href="#">BOOKINGS</a></li>
-              <li class="active"><a href="#">MESSAGES</a></li>
-              <li><a href="#">PAYMENT</a></li>
+            <ul class="nav navbar-nav nav-db-item navbar-right">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="active"><a href="rides_upcoming.html">Rides</a></li>
+              <li><a href="booking_current.html">Bookings</a></li>
+              <li><a href="messages.html">Messages</a></li>
+              <li><a href="#">Payment</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="25px" height="25px"> AMANDA JONES <span class="glyphicon glyphicon-chevron-down"></span></a>
+                  <div class="nav-db-pict">
+                    <img src="images/user-profile/no-images.png" width="45" height="45" alt="Afrikgo Member Profile">
+                  </div>
+                  <span class="nav-db-name">Amanda Jones</span>
+                  <span class="arrow"><img src="../images/icon-arrow-down-blue.png"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                 </ul>
@@ -53,67 +57,60 @@
         </div>
       </nav>
     </header>
+    
     <!-- Body of Content-->
-    <section class="header">
-      <div class="container">
+    <section class="header header-db">
+      <div class="container container-custom">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3">
+              <h2 class="header-db-text">Rides</h2>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="body-content body-ride">
+      <div class="container container-custom">
+          <div class="row">
+            <div class="panel panel-default panel-db">
+              <div class="panel-body panel-db-body">
+                <div class="col-xs-12 col-sm-12 col-md-8">
+                  <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="#">Upcoming Rides</a></li>
+                    <li><a href="#">Past Rides</a></li>
+                    <li><a href="#">Archived Rides</a></li>
+                    <li><a href="#">Ride Alert</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                  <button type="button" class="btn btn-cdb-link" aria-haspopup="true" aria-expanded="false">Create Ride Alert</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    <section class="content content-ride">
+      <div class="container container-custom">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-3">
-            <h2>Messages</h2>
+          <div class="col-xs-12 col-sm-12 col-md-12 notif">
+            <p class="text-muted">You don't have any upcoming rides.</p>
+            <p class="text-muted">You can offer a new ride by clicking on:</p>
+            <button type="button" class="btn btn-cdb-link" aria-haspopup="true" aria-expanded="false">OFFER A RIDE</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="body-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 wto-content">
-            <div id="messages">
-                <div class="col-md-2 img text-center">
-                  <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
-                </div>
-                <div class="col-md-8 detail">
-                  <h4>Michael Butt</h4>
-                  <p>ACCRA-KUMMASI</p>
-                  <p class="text-muted">Hello, I would like to join your ride to Kummasi in next friday. Are you available?
-                  </p>
-                </div>
-                <div class="col-md-2 rides">
-                  <p class="text-muted pull-right">Yesterday</p>
-                </div>
-                <hr id="border-bottom">
-              </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div id="messages">
-                <div class="col-md-2 img text-center">
-                  <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
-                </div>
-                <div class="col-md-8 detail">
-                  <h4>Michael Butt</h4>
-                  <p>ACCRA-KUMMASI</p>
-                  <p class="text-muted">Hello, I would like to join your ride to Kummasi in next friday. Are you available?
-                  </p>
-                </div>
-                <div class="col-md-2 rides">
-                  <p class="text-muted pull-right">01-08-2017, 10.33</p>
-                </div>
-                <hr id="border-bottom">
-              </div>
-            </div>
-        </div>
-        </div>
-    </section>
     
     <section class="nav-footer">
-      <div class="container">
+      <div class="container container-custom">
         <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 nav-footer-content">
             <h4>USING AFRIKGO</h4>
             <ul class="bottom-detail">
               <li><a href="#"> How it works</a></li>
-              <li><a href="#">Trust & Safety</a></li>
+              <li><a href="#">Trust &amp; Safety</a></li>
               <li><a href="#">Experience levels</a></li>
               <li><a href="#">Ratings</a></li>
               <li><a href="#">Ladies only</a></li>
@@ -121,7 +118,7 @@
               <li><a href="#">Insurance</a></li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-3 col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 nav-footer-content">
             <h4>OUR COMPANY</h4>
             <ul class="bottom-detail">
               <li><a href="#">About us</a></li>
@@ -132,7 +129,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-3 col-md--3">
+          <div class="col-xs-3 col-sm-3 col-md-3 nav-footer-content">
             <h4>LEGAL</h4>
             <ul class="bottom-detail">
               <li><a href="#">Terms & Conditions</a></li>
@@ -140,11 +137,11 @@
               <li><a href="#">Cookies Policy</a></li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-3 col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 nav-footer-content">
             <h4>GET OUR MOBILE APP</h4>
             <ul class="bottom-detail">
-              <li><img src="assets/img/appstore.png" width="169px" height="50px"></li>
-              <li><img src="assets/img/google.png" width="169px" height="48px"></li>
+              <li><img src="assets/img/appstore.png" width="169px" height="50px" class="img-responsive"></li>
+              <li><img src="assets/img/google.png" width="169px" height="48px" class="img-responsive"></li>
               <li>
                   <img src="assets/img/Facebook.png">&nbsp;
                   <img src="assets/img/Twitter.png">&nbsp;
@@ -156,6 +153,7 @@
         </div>
       </div>
     </section>
+    
     <section class="footer">
       <!-- FOOTER -->
       <footer>
@@ -169,3 +167,5 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+          
