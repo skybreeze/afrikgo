@@ -8,9 +8,9 @@
     <title>Bookings</title>
 
     <!-- Bootstrap -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/afrikgo.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/afrikgo.css" type="text/css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,11 +102,15 @@
                   </div>
                 </div>
                 
-                <div class="col-sm-10 col-md-10 detail message-ride-detail">
-                  <h4>Michael Butt</h4>
-                  <p class="detail-city">Accra - Kummasi</p>
+                <div class="col-sm-10 col-md-10 detail message-ride-detail message-book-detail">
                   <div class="row">
                     <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h4>Michael Butt</h4>
+                          <p class="detail-city">Accra - Kummasi</p>
+                        </div>
+                      </div>
                       <div class="row">
                         <div class="col-md-4">
                           <p class="detail-caption text-muted">Pick up point</p>
@@ -129,6 +133,13 @@
                         <p class="nominal">$29</p>
                         <p class="text-muted calendar">
                           <span class="db-ico ico-calendar"></span>July 31, 2017
+                        </p>
+                        <p class="price-star">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
                         </p>
                       </div>
                     </div>
@@ -153,11 +164,15 @@
                   </div>
                 </div>
                 
-                <div class="col-sm-10 col-md-10 detail message-ride-detail">
-                  <h4>Michael Butt</h4>
-                  <p class="detail-city">Accra - Kummasi</p>
+                <div class="col-sm-10 col-md-10 detail message-ride-detail message-book-detail">
                   <div class="row">
                     <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h4>Michael Butt</h4>
+                          <p class="detail-city">Accra - Kummasi</p>
+                        </div>
+                      </div>
                       <div class="row">
                         <div class="col-md-4">
                           <p class="detail-caption text-muted">Pick up point</p>
@@ -181,10 +196,118 @@
                         <p class="text-muted calendar">
                           <span class="db-ico ico-calendar"></span>July 31, 2017
                         </p>
+                        <p class="price-star">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star disabled"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
                   <hr class="separator-cdb">
+                </div>
+                
+                <div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="row">                 
+                          <button type="button" class="close visible-sm" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="row">                 
+                          <div class="col-sm-6">
+                            <button type="button" class="close visible-xs visible-xs" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4>Accra <span class="db-ico ico-arrow-right"></span> Kummasi</h4>
+                          </div>
+                          <div class="col-sm-6">
+                            <p class="price-star">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star disabled"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-body modal-ride">
+                        <div class="row modal-ride-item">
+                          <div class="modal-left col-sm-3">
+                            <p class="text-muted">Pick up point</p>
+                          </div>
+                          <div class="modal-right col-sm-9">
+                            <p>
+                              <a href="#">
+                                <span class="db-ico ico-location"></span>  
+                                28A Wellington Rd. Pinner HA5 4NL,UK
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row modal-ride-item">
+                          <div class="modal-left col-sm-3">
+                            <p class="text-muted">Drop-off point</p>
+                          </div>
+                          <div class="modal-right col-sm-9">
+                            <p>
+                              <a href="#">
+                                <span class="db-ico ico-location"></span>  
+                                University of Salford, Salford
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row modal-ride-item">
+                          <div class="modal-left col-sm-3">
+                            <p class="text-muted">Date</p>
+                          </div>
+                          <div class="modal-right col-sm-9">
+                            <p class="calendar"><span class="db-ico ico-calendar"></span> July 31,2017</p>
+                          </div>
+                        </div>
+                        <div class="row modal-ride-item">
+                          <div class="modal-left col-sm-3">
+                            <p class="text-muted">Details</p>
+                          </div>
+                          <div class="modal-center col-sm-5">
+                            <p><span class="db-ico ico-clock"></span> Pick up right on time</p>
+                            <p><span class="db-ico ico-reload"></span>  Max.15 min. detour</p>
+                          </div>
+                          <div class="modal-right col-sm-4">
+                            <p><span class="db-ico ico-briefcase"></span> Medium (travel bag)
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row modal-ride-item">
+                          <div class="modal-left col-sm-3">
+                            <p class="text-muted">Option</p>
+                          </div>
+                          <div class="modal-right col-sm-9">
+                            <p class="calendar"><span class="db-ico ico-group"></span> Max. 2 in the back seats</p>
+                          </div>
+                        </div>
+                        </div>
+                      <div class="modal-footer modal-ride">
+                        <div class="row modal-ride-item">
+                          <div class="modal-user-pict">
+                            <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94" height="94">
+                            <span class="db-ico ico-check"></span>
+                          </div>
+                          <div class="modal-user-detail">
+                            <h4>Julie B.</h4>
+                            <p class="text-muted"> Going from London to Manchester. Harrow or Uxbridge pick up. Going to Salford</p>
+                            <button type="button" class="btn btn-cdb-link">Contact the Driver</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
               </div>
@@ -257,5 +380,11 @@
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.message-ride-detail').on("click", function(){
+          $('#detail').modal('show');
+      });
+    </script>
+    
   </body>
 </html>
