@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/afrikgo.css" rel="stylesheet">
+    <link href="assets/css/style_kevin.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,6 +69,7 @@
         </div>
     </section>
     
+    
     <!-- BODY OF CONTENT -->
     <section class="body-content body-ride">
       <div class="container container-custom">
@@ -76,10 +78,10 @@
               <div class="panel-body panel-db-body">
                 <div class="col-xs-12 col-sm-12 col-md-8">
                   <ul class="nav navbar-nav navbar-left">
-                    <li><a href="rides_upcoming.html">Upcoming Rides</a></li>
+                    <li ><a href="#">Upcoming Rides</a></li>
                     <li><a href="rides_pastrides.html">Past Rides</a></li>
-                    <li class="active"><a href="#">Archived Rides</a></li>
-                    <li><a href="#">Ride Alert</a></li>
+                    <li><a href="rides_archived.html">Archived Rides</a></li>
+                    <li class="active"><a href="#">Ride Alert</a></li>
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4">
@@ -101,100 +103,85 @@
                
                 <div class="col-sm-2 col-md-2 img text-center">
                   <div class="message-ride-image">
-                    <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
-                    <span class="db-ico ico-check"></span>
+                    <img src="assets/img/icon/ride_alert.png" alt="" class="img-circle" width="94px" height="94px">
                   </div>
                 </div>
                 
                 <div class="col-sm-10 col-md-10 detail message-ride-detail">
-                  <h4>Michael Butt</h4>
-                  <p class="detail-city">Accra - Kummasi</p>
+                  <p class="detail-city r_alert_route">Accra - Kummasi</p>
                   <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
                       <div class="row">
                         <div class="col-md-4">
-                          <p class="detail-caption text-muted">Pick up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> 28A Wellington Rd. Pinner HA5 4NL,UK</a>
+                          <p class="r_alert_date"><img src="assets/img/icon/icon-date.png">July 31, 2017</p>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-md-4">
-                          <p class="detail-caption text-muted">Drop-off up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> University of Salford, Salford</a>
+                          <a href="" class="r_alert_del">Delete</a>
                         </div>
                       </div>  
                     </div>
-                    <div class="col-sm-4">
-                      <div class="detail-price">
-                        <p class="nominal">$29</p>
-                        <p class="text-muted calendar">
-                          <span class="db-ico ico-calendar"></span>July 31, 2017
-                        </p>
+                    <div class="col-sm-3">
+                      <div class="r_alert_switch">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label>
                       </div>
                     </div>
                   </div>
-                  <hr class="separator-cdb">
                 </div>
                 
               </div>
+                  <hr class="separator-cdb">
             </div>
           </div>
         </div>
         
-         <div class="row">
+        <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12">
             <div id="messages" class="messages-ride">
               <div class="row">
                
                 <div class="col-sm-2 col-md-2 img text-center">
                   <div class="message-ride-image">
-                    <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
-                    <span class="db-ico ico-check"></span>
+                    <img src="assets/img/icon/ride_alert.png" alt="" class="img-circle" width="94px" height="94px">
                   </div>
                 </div>
                 
                 <div class="col-sm-10 col-md-10 detail message-ride-detail">
-                  <h4>Michael Butt</h4>
-                  <p class="detail-city">Accra - Kummasi</p>
+                  <p class="detail-city r_alert_route">Accra - Kummasi</p>
                   <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
                       <div class="row">
                         <div class="col-md-4">
-                          <p class="detail-caption text-muted">Pick up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> 28A Wellington Rd. Pinner HA5 4NL,UK</a>
+                          <p class="r_alert_date"><img src="assets/img/icon/icon-date.png">July 31, 2017</p>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-md-4">
-                          <p class="detail-caption text-muted">Drop-off up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> University of Salford, Salford</a>
+                          <a href="" class="r_alert_del">Delete</a>
                         </div>
                       </div>  
                     </div>
-                    <div class="col-sm-4">
-                      <div class="detail-price">
-                        <p class="nominal">$29</p>
-                        <p class="text-muted calendar">
-                          <span class="db-ico ico-calendar"></span>July 31, 2017
-                        </p>
+                    <div class="col-sm-3">
+                      <div class="r_alert_switch">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label>
                       </div>
                     </div>
                   </div>
-                  <hr class="separator-cdb">
                 </div>
                 
               </div>
+                  <hr class="separator-cdb">
             </div>
           </div>
         </div>
+        
           
       </div>
     </section>

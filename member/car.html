@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bookings</title>
+    <title>Car | Profile</title>
 
     <!-- Bootstrap -->
     <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/afrikgo.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="assets/css/style_kevin.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +47,8 @@
                     <img src="images/user-profile/no-images.png" width="45" height="45" alt="Afrikgo Member Profile">
                   </div>
                   <span class="nav-db-name">Amanda Jones</span>
-                  <span class="arrow"><img src="../images/icon-arrow-down-blue.png"></span></a>
+                  <span class="arrow"><img src="../images/icon-arrow-down-blue.png"></span>
+                </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                 </ul>
@@ -63,138 +64,88 @@
       <div class="container container-custom">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
-              <h2 class="header-db-text">Bookings</h2>
+              <h2 class="header-db-text">Profile</h2>
             </div>
           </div>
         </div>
     </section>
-    
-    <!-- BODY OF CONTENT -->
-    <section class="body-content body-ride">
+
+    <section class="content content-message">
       <div class="container container-custom">
+        <div class="col-md-3">
           <div class="row">
-            <div class="panel panel-default panel-db">
-              <div class="panel-body panel-db-body">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="#">Current</a></li>
-                    <li><a href="booking_history.html">History</a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="panel panel-cdb panel-member">
+              <p class="member-panel-title">Profile</p>
+              <hr class="separator-cdb" > 
+              <ul class="nav-profile">
+                <li><a href="profile.html">Personal Information</a></li>
+                <li><a href="">Photo</a></li>
+                <li><a href="preferences.html">Preference</a></li>
+                <li><a href="verification.html">Verification</a></li>
+                <li><a href="" class="active">Car</a></li>
+                <li><a href="">Postal Address</a></li>
+              </ul>
             </div>
           </div>
+          <div class="row">
+            <div class="panel panel-cdb panel-member">
+              <p class="member-panel-title">Rating</p>
+              <hr class="separator-cdb" > 
+              <ul class="nav-profile">
+                <li><a href="rating_received.html">Rating you've received</a></li>
+                <li><a href="rating_left.html">Rating you've left</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="panel panel-cdb panel-member">
+              <p class="member-panel-title">Account</p>
+              <hr class="separator-cdb" > 
+              <ul class="nav-profile">
+                <li><a href="my_funds.html">Request my funds</a></li>
+                <li><a href="">Money transfer detail</a></li>
+                <li><a href="">Payments made</a></li>
+                <li><a href="">Notification</a></li>
+                <li><a href="">Password</a></li>
+                <li><a href="">Close my account</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>   
+        <div class="col-md-9 lpd-30">
+          <h4 class="profile-title">
+            Your Car Details
+          </h4>
+          <p class="m-title-m pf-lpush">Add your number plate</p>
+          <p class="m-title-l pf-lpush">We ask all our drivers for security reasons.</p>
+          <form class="form-horizontal car-form">
+            <div class="form-group">
+              <label for="country" class="col-sm-2 control-label member-label pf-label-med">Country</label>
+              <div class="col-sm-10">
+                <select class="profile-field pf-sm pf-lpush" name="">
+                  <option value="">Indonesia</option>
+                  <option value="">Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lname" class="col-sm-2 control-label member-label pf-label-med">Number Plat</label>
+              <div class="col-sm-10">
+                <input type="text" class="profile-field pf-sm pf-lpush" id="lname" placeholder="N 8757 ABG">
+              </div>
+            </div>     
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default btn-cdb-link pf-lpush">Continue</button>
+                <button type="submit" class="btn btn-default btn-cdb-link btn-invert pf-lpush">No, Thanks</button>
+              </div>
+            </div>
+          </form>
+        </div> 
       </div>
     </section>
-    
-    <section class="content">
-      <div class="container container-custom">
-        
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div id="messages" class="messages-ride">
-              <div class="row">
-               
-                <div class="col-sm-2 col-md-2 img text-center">
-                  <div class="message-ride-image">
-                    <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
-                    <span class="db-ico ico-check"></span>
-                  </div>
-                </div>
-                
-                <div class="col-sm-10 col-md-10 detail message-ride-detail">
-                  <h4>Michael Butt</h4>
-                  <p class="detail-city">Accra - Kummasi</p>
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="detail-caption text-muted">Pick up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> 28A Wellington Rd. Pinner HA5 4NL,UK</a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="detail-caption text-muted">Drop-off up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> University of Salford, Salford</a>
-                        </div>
-                      </div>  
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="detail-price">
-                        <p class="nominal">$29</p>
-                        <p class="text-muted calendar">
-                          <span class="db-ico ico-calendar"></span>July 31, 2017
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <hr class="separator-cdb">
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        
-         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div id="messages" class="messages-ride">
-              <div class="row">
-               
-                <div class="col-sm-2 col-md-2 img text-center">
-                  <div class="message-ride-image">
-                    <img src="assets/img/bg-icon.png" alt="" class="img-circle" width="94px" height="94px">
-                    <span class="db-ico ico-check"></span>
-                  </div>
-                </div>
-                
-                <div class="col-sm-10 col-md-10 detail message-ride-detail">
-                  <h4>Michael Butt</h4>
-                  <p class="detail-city">Accra - Kummasi</p>
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="detail-caption text-muted">Pick up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> 28A Wellington Rd. Pinner HA5 4NL,UK</a>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="detail-caption text-muted">Drop-off up point</p>
-                        </div>
-                        <div class="col-md-8">
-                          <a href="#" class="detail-address"><span class="db-ico ico-location"></span> University of Salford, Salford</a>
-                        </div>
-                      </div>  
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="detail-price">
-                        <p class="nominal">$29</p>
-                        <p class="text-muted calendar">
-                          <span class="db-ico ico-calendar"></span>July 31, 2017
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <hr class="separator-cdb">
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-          
-      </div>
-    </section>
-    
+
+
     <section class="nav-footer">
       <div class="container container-custom">
         <div class="row">
