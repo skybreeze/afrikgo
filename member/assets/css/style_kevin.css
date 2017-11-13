@@ -694,26 +694,72 @@ p.r-city {
 	color: #415161;
 	margin-top: 20px;
 }
-.cumu-rating p {
-	display: inline-block;
-	margin-bottom: 9px;
+.grade-rating {
+	text-align: right;
+	
 }
-.cumu-rating span {
-	display: inline-block;
-	padding-right: 22px;
-	padding-left: 12px;
+.total-rating {
+	text-align: left;
+	padding-left: 25px;
+	
+}
+.col-bar {
+	max-width: 175px;
+}
+.cumu-rating .row {
+	margin-bottom: 5px;
+}
+@media screen and (min-width: 1461px){
+	.grade-rating {
+		width: 160px; 	
+	}
+	.total-rating {
+		width: 15px;
+	}
+	.col-bar {
+		width: 175px;
+	}
+}
+@media screen and (max-width: 992px){
+	.grade-rating {
+		text-align: left;
+		width: 160px;
+	}
+	.total-rating {
+		padding-left: 15px;
+		text-align: left;
+	}
+	.col-bar {
+		width: 175px;
+	}
+	.cumu-rating .row {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 450px){
+	.grade-rating {
+		width: 100%;
+		max-width: 100%;
+	}
+	.total-rating {
+		padding-left: 15px;
+		text-align: left;
+	}
+	.col-bar {
+		width: 175px;
+	}
 }
 .total-bar {
 	display: inline-block;
 	background: #e4e4e4;
+	float: left;
 	width: 165px;
 	height: 7px;
 	border-radius: 7px;
-	margin-left: 22px;
 	margin-right: 12px;
-	padding-left: 12px;
 	position: relative;
 	margin: 0 auto;
+	margin-top: 7.5px;
 }
 .total-bar span {
 	content: "";
