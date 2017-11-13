@@ -83,9 +83,12 @@ p.time-msg {
 	margin-right: 12px;
 }
 @media screen and (max-width: 360px){
-	.btn-attac {
+	.btn-attac {	
+		margin-right: 0px;
+		display: block;
+		width: 160px;
+		margin: 0 auto;
 		margin-bottom: 20px;
-		margin-right: 5px;
 	}
 }
 
@@ -141,6 +144,16 @@ p.time-msg {
 	color: #415161;
 	vertical-align: middle;
 }
+@media screen and (max-width: 991px){ 
+	.member-fx-value {
+		margin-left: -15px;
+	}
+}
+@media screen and (max-width: 360px){ 
+	.member-fx-value {
+		margin-left: -15px;
+	}
+}
 .member-label label {
 	font-weight: inherit;
 }
@@ -154,6 +167,9 @@ p.time-msg {
 	.personal-form .col-xs-9 {
 		width: 100%;
 	}
+	.personal-form .col-xs-offset-3 {
+		margin-left: 0;
+	}
 }
 .member-fx-value {
 	text-align: left !important;
@@ -166,6 +182,12 @@ p.time-msg {
 	line-height: 15px;
 	font-size: 15px;
 	width: 100%;
+	background: #fdfdfd;
+}
+@media screen and (max-width: 768px){
+	.profile-field {
+		margin-bottom: 5px;
+	}
 }
 @media screen and (max-width: 360px){
 	.profile-field {
@@ -272,6 +294,18 @@ label.pf-label-med {
 .no-incl {
 	padding-left: 0;
 }
+@media screen and (max-width: 768px){
+	.no-incl {
+		margin-bottom: 35px;
+		padding-left:  15px;
+	}
+}
+@media screen and (max-width: 420px){
+	.no-incl {
+		margin-bottom: 35px;
+		padding-left:  0px;
+	}
+}
 .no-incl li {
 	list-style: none;
 	font-family: "Rubik Regular", sans-serif;
@@ -304,7 +338,17 @@ label.pf-label-med {
 .car-form {
 	margin-top: 37px;
 }
-
+@media screen and (max-width: 991px){ 
+	.car-form .member-label {
+		text-align: left;
+	}
+	.car-content .pf-lpush {
+		margin-left: 0;
+	}
+	.car-content h4.profile-title {
+		padding-left: 0;
+	}
+}
 .myfund-btn button {
 	padding: 18px 30px;
 	font-family: "Rubik Medium",sans-serif;
@@ -341,6 +385,18 @@ label.pf-label-med {
 	color: #767676;
 	padding-top: 15px;
 }
+@media screen and (max-width: 768px){
+	.money-transf { 
+		text-align: left;
+		padding-left: 15px;
+	}
+}
+@media screen and (max-width: 360px){
+	.money-transf { 
+		text-align: left;
+		padding-left: 0px;
+	}
+}
 .money-transf span {
 	font-size: 20px;
 	font-family: "Rubik Medium",sans-serif;
@@ -350,6 +406,18 @@ label.pf-label-med {
 .req-payment button{
 	width: 100%;
 	float: right;
+}
+@media screen and (max-width: 768px){
+	.req-payment button{
+		float: left;
+		margin-left: 15px;
+	}
+}
+@media screen and (max-width: 360px){
+	.req-payment button{
+		float: left;
+		margin-left: 0px;
+	}
 }
 .rq-title {
 	font-family: "Rubik Medium", sans-serif;
@@ -378,6 +446,15 @@ label.pf-label-med {
 .preference-form .member-label {
 	padding-top: 30px !important;
 }
+@media screen and (max-width: 992px){ 
+	.preference-form .member-label {
+		text-align: left !important;
+	}
+	.preference-form button.pf-lpush {
+		margin-left: 0;
+	}
+}
+
 .preference-form input[type="radio"] {
 	opacity: 0;
 	margin-right: -2px;
@@ -445,11 +522,16 @@ label.pf-label-med {
 .vrf-descp {
 	text-align: left;
 }
+
+
 .vrf-desc img {
 	text-align: center;
 	margin-top: -25px;
 }
 @media screen and (max-width: 768px){
+	.vrf-descp {
+		text-align: center;
+	}
 	.vrf-desc img {
 		margin-top: 25px;
 	}
@@ -550,7 +632,7 @@ p.r_alert_date {
   content: "";
   height: 33px;
   width: 33px;
-  left: 2px;
+  left: 0px;
   bottom: -9px;
   background-color: #cccccc;
   -webkit-transition: .4s;
@@ -569,9 +651,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
 }
 
 /* Rounded sliders */
@@ -656,4 +738,30 @@ p.r-city {
 }
 .t-cumu-rating td:nth-child(3) {
 	padding-left: 12px;
+}
+
+
+.messages-ride .ride-alert--icon {
+	border: none;
+}
+
+.messages-ride .ride-alert--icon img {
+	width: 88px;
+	height: 88px;
+}	
+@media screen and (max-width: 768px){
+	.body-ride .panel-rd{
+		padding: 20px 30px;
+	}
+}
+@media screen and (max-width: 405px){
+	.body-ride .panel-rd{
+		padding: 20px 30px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.body-ride .panel-rd{
+		padding: 20px 10px;
+	}
 }
